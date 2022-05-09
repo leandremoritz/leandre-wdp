@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#Home .container {
+    height: 95vh;
+   
+    background-size: cover;
+    color: grey;
+   
+    
+}
+
+.fa-brands:hover{
+    color: rgb(71, 212, 71);
+
+
+}
+
+
+
+.hometext{
+    padding-top: 250px;
+    display: block;
+    position: relative;
+    padding-right: 200px;
+}
+
+
+.wrapper {
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+   animation: typing 1.5s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+  #About{
+      height: 90vh;
+  }
+  .title-border {
+    background-color: #41b548;
+    height: 4px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+        margin-bottom: 60px;
+    }
+    ul {
+        list-style: none; /* Remove list bullets */
+        padding: 0;
+        margin: 0;
+       }
+      
