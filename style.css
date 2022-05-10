@@ -237,7 +237,7 @@ top: 100%;
   
   .single-img {
     position: relative;
-    width: 100%;
+    
     float: left;
     margin: 0 1%;
   }
@@ -262,7 +262,7 @@ top: 100%;
   }
   
   .single-img:hover .img-overlay {
-    height: 90%;
+    height: 100%;
   }
   
   .text {
