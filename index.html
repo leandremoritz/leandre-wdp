@@ -16,7 +16,8 @@
 >
 <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
-<body>
+<body class="d-flex justify-content-center flex-column align-content-center">
+    
  <!-- navbar -->
  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-lg">
@@ -61,7 +62,7 @@
             <a class="nav-link" href="#Testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Contacts">Contacts</a>
+            <a class="nav-link" href="#Contacts">Contacts</a>
         </ul>
       </div>
     </div>
@@ -94,7 +95,7 @@
     </div>
  </section>
   
- <div class="container shadow-lg p-3 mb-5 bg-body rounded"   data-aos="flip-up">
+ <div class="container shadow-lg p-3 my-5 bg-body rounded"   data-aos="flip-up">
  <section id="About"   >
      
       
@@ -149,7 +150,7 @@
     </div>
 </div>
 </section>
-    <section id="Skills" data-aos="flip-down">
+    <section id="Skills">
        <div class="container shadow-lg p-3 mb-5 bg-body rounded">
            <div class="row">
            <h1 class="text-center  section-heading" style="font-weight:bolder; font-size:50px; font-family: monospace;">Skills</h1>
@@ -158,11 +159,11 @@
              </div>
        </section>
 
-       <section id="Resume "  data-aos="flip-up" style="font-family: monospace;">
+       <section id="Resume " class="my-5" data-aos="flip-up" style="font-family: monospace;">
            <div class="container shadow-lg p-3 bg-body rounded" >
 
-        <h1  style="background-color:  #e9ecef !important; margin: 0!important;">Resume</h1>
-<div class="timeline" style="background-color:  #e9ecef !important;">
+        <h1  style=" background-image: linear-gradient(90deg, #e9ecef , grey) !important; margin: 0!important;">Resume</h1>
+<div class="timeline" style= "background-image: linear-gradient(90deg, #e9ecef , grey) !important;">
   
  
   
@@ -188,65 +189,179 @@
 </div>
         
        </section>
-       <div class="container shadow-lg p-3 mb-5 bg-body rounded" data-aos="flip-down">
-       <section id="Projects" style="font-family: monospace;">
+       <div class="container  shadow-lg  my-5" data-aos="flip-down">
         
-            <h1 class="text-center" style="font-family:monospace; padding-top: 80px;">Projects</h1>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 " data-aos="zoom-in-up">
-            <div class="single-img">
-                <img src="calculator.jpg" alt="Avatar" class="image">
-                <div class="img-overlay">
-                  <div class="text">
-                      
-                      Calculator <br><a href="https://github.com/leandremoritz/calculator"><span style="font-size:30px; color: black;" ><i class="fa-brands fa-github"></i></span>
-                    </a>
-                </div>
-
-                </div>
-            </div>
-            </div>
            
-            <div class="col-md-4 col-sm-12 " data-aos="zoom-in-up">
-              <div class="single-img">
-                <img src="bakery.jpg" alt="Avatar" class="image">
-                <div class="img-overlay">
-                  <div class="text">Bakery (Group Project)<br> <a href="https://github.com/Carlaamylawrence/Company_portfolio"><span/span style="font-size:30px; color: black;"><i class="fa-brands fa-github"></i></span></a></div>
-                </div>
+       <section id="Projects">
+           <h1>Projects</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="project-card">
+                    <div class="project-img">
+                       <img src="./bakery.jpg" alt="">
+                    </div>
+                    <div class="profile-content  text-center">
+    
+                         <button class="btn" style="background-color: black; font-family: monospace;">Live Site<a href=""></a></button>                     
+                         <ul class="social-links">
+                             <li><a href="https://github.com/Carlaamylawrence/Company_portfolio"  class="fa-brands text-none fa-github"  style="color: black;"></i></a></li>
+                           
+                         </ul>
+                    </div>
                 </div>
             </div>
-              
-                <div class="col-md-4 col-sm-12 " data-aos="zoom-in-up">
-              <div class="single-img">
-                <img src="holidayD.jpg" alt="Avatar" class="image">
-                <div class="img-overlay">
-                  <div class="text">Holiday<br><a href="https://github.com/leandremoritz/branchestask"><span style="font-size:30px; color: black;"><i class="fa-brands fa-github"></i></span></a></div>
-                </div>
-                </div>
-            </div>
-            </div>
-              <div class="row d-flex justify-content-center" data-aos="zoom-in-up">
-                <div class="col-md-4 col-sm-12 ">
-              <div class="single-img">
-                <img src="restuarant.jpg" alt="Avatar" class="image">
-                <div class="img-overlay">
-                  <div class="text">Restuarant<br><a href="https://github.com/leandremoritz/Delicious"><span style="font-size:30px;color: black;"><i class="fa-brands fa-github"></i></span></a></div>
-                
-                </div>
+            <div class="col-md-3">
+              <div class="project-card">
+                  <div class="project-img">
+                     <img src="./calculator.jpg" alt="">
+                  </div>
+                  <div class="profile-content">
+    
+                    <button class="btn"  style="background-color: black; font-family: monospace;">Live Site<a href=""> </a></button>                    
+                       <ul class="social-links">
+                           <li><a href="https://github.com/leandremoritz/calculator" class="fa-brands text-none fa-github"  style="color: black;"></i></a></li>
+                           
+                       </ul>
+                  </div>
               </div>
+          </div>
+          <div class="col-md-3">
+              <div class="project-card">
+                  <div class="project-img">
+                     <img src="./holidayD.jpg" alt="">
+                  </div>
+                  <div class="profile-content">
+    
+                    <button class="btn"  style="background-color: black; font-family: monospace;">Live Site<a href=""> </a></button>                  
+                       <ul class="social-links">
+                           <li><a href="https://github.com/leandremoritz/branchestask"  class="fa-brands text-none fa-github"  style="color: black;"></i></a></li>
+                          
+                       </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="project-card">
+                <div class="project-img">
+                   <img src="./restuarant.jpg" alt="">
+                </div>
+                <div class="profile-content">
+                    <button class="btn"  style="background-color: black; font-family: monospace;">Live Site<a href=""> </a></button> 
+                     <ul class="social-links">
+                         <li><a href="https://github.com/leandremoritz/Delicious" class="fa-brands text-none fa-github" style="color: black;"></i></a></li>
+                        
+                     </ul>
+                </div>
             </div>
-            
-            
-          
-
-
+        </div>
         </div>
     </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="container shadow-lg py-2 my-5 "   data-aos="flip-up">
+            
+            <section id="Testimonials">
+               
+                <div class="slider ">
+                    <h1>Testimonials</h1>
+                    <input type="radio" name="testimonial" id="t-1">
+                    <input type="radio" name="testimonial" id="t-2">
+                    <input type="radio" name="testimonial" id="t-3" checked>
+                    <input type="radio" name="testimonial" id="t-4" checked>
+                    
+                    <div class="testimonials">
+                      <label class="item" for="t-1">
+                        <img src="./jesse.png" alt="picture">
+                        <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                        <h2>Jesse Spence</h2>
+                      </label>
+                      <label class="item" for="t-2">
+                        <img src="./jason.png" alt="picture">
+                        <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                        <h2>Jason Wandrag</h2>
+                      </label>
+                      <label class="item" for="t-3">
+                        <img src="./Ashton (4).JPG" alt="picture">
+                        <p>"Le-Andre is a very talented and intelligent individual, who is willing to go the extra mile and loves to add her own personal touch to things. She isn't afraid to ask questions and likes learning new things, she has great potential"</p>
+                        <h2>Ashton Abrahams</h2>
+                      </label>
+                      <label class="item" for="t-4">
+                        <img src="./Ashton (4).JPG" alt="picture">
+                        <p>"Le-Andre is a very talented and intelligent individual, who is willing to go the extra mile and loves to add her own personal touch to things. She isn't afraid to ask questions and likes learning new things, she has great potential"</p>
+                        <h2>Ashton Abrahams</h2>
+                      </label>
+                      
+                     
+                      
+                    </div>
+                    <div class="dots">
+                      <label for="t-1"></label>
+                      <label for="t-2"></label>
+                      <label for="t-3"></label>
+                      <label for="t-4"></label>
+                     
+                    </div>
+                  </div>
+
+
+
+
+            </section>
         </div>
 
 
 
-       
+
+        
+    <div class="container" data-aos="flip-down">
+        <section id="Contacts" class=" shadow-lg">
+        <h1>Contact</h1>
+
+<form class="cf">
+    
+  <div class="half left cf">
+      
+    <input type="text" id="input-name" placeholder="Name">
+    
+    <input type="email" id="input-email" placeholder="Email address">
+    
+    <input type="text" id="input-subject" placeholder="Subject">
+  </div>
+  
+  
+  <div class="half right cf">
+    
+    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+  </div>  
+
+  <input type="submit" value="Submit" id="input-submit">
+</form>
+</section>
+</div>
+
+
+   <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>    
     
 
 
@@ -272,6 +387,7 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/28c2fb0c61.js" crossorigin="anonymous"></script>
    <script src="assets/vendor/php-email-form/validate.js"></script>
+   <script src="java.js"></script>
    
 </body>
 </html>
