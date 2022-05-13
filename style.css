@@ -5,10 +5,18 @@
     
     
 }
+#particular {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
 .text-none{
     text-decoration: none !important;
 }
-body{
+html,body{
      background-color: black;
     width: 100%;
     overflow-x: hidden;
@@ -208,7 +216,7 @@ body{
 
        #Resume {
            height: 100vh;
-           background-image: linear-gradient(90deg, #e9ecef , grey);
+          
        }
                      .col-1{ height: 80px;
                        color: #0af10a;
@@ -235,12 +243,7 @@ top: 100%;
     box-sizing: border-box;
   }
   
-  #Resume {
-    background-image: linear-gradient(90deg, #e9ecef , grey);
-    color: #bbb;
-    
-    font-family: "Playfair Display", serif;
-  }
+
   
   h1 {
     text-align: center;
