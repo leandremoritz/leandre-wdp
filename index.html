@@ -69,34 +69,39 @@
   </nav>
   <!-- End of navbar -->
   
- <section id="Home" class=" shadow-lg text-center mt-4">
-  
-     <div class="container container-fluid" style=" background-image: url(home.jpg);">
+ <section id="Home" class=" shadow-lg text-center mt-4 min-vh-100"  >
+  <div id="particular"></div>
+<div class="container container-fluid" >
+    
        
-         <h2 style="padding-top: 240px; font-family: monospace;" class="text-shadow">Hello !</h2>
-        <h1 style=" padding-right: 20px; font-family:monospace; font-weight: bolder;  text-shadow: 20px 25px 20px black; text-decoration: solid;">Le-Andre Moritz</h1>
-        <div class="wrapper d-flex flex-column">
-             <div class="typing-demo mb-3">
-              Aspiring Web Developer
-              
-            </div>
-              <h3>
-                  <a style="  padding-left: 10px; padding-right: 10px; text-decoration: none; font-weight: bold;"  class="text-secondary bg-light"  href="https://www.instagram.com/leandre_moritz/">
-                  <i class="fa-brands fa-instagram"> </i>
-                </a>
-                <a style=" padding-left: 10px; padding-right: 10px; text-decoration: none; font-weight: bold;" class="text-secondary bg-light mx-3 " href="www.linkedin.com/in/leandre-moritz-32120823a">
-                  <i class="fa-brands fa-linkedin"></i>
-                  <a class="text-secondary bg-light" style="padding-left: 10px; padding-right: 10px; text-decoration: none; font-weight: bold;" href="https://github.com/leandremoritz" ><i class="fa-brands fa-github"></i></a>
-                </a>
-                </h3>
-            </div>
-        
-     </div>
-    </div>
+    <h2 style="padding-top: 240px; font-family: monospace;" class="text-shadow">Hello !</h2>
+   <h1 style=" padding-right: 20px; font-family:monospace; font-weight: bolder;  text-shadow: 20px 25px 20px black; text-decoration: solid;">Le-Andre Moritz</h1>
+   <div class="wrapper d-flex flex-column">
+        <div class="typing-demo words mb-3">
+         Aspiring Web Developer
+         
+       </div>
+         <h3>
+             <a style="padding-left: 10px; padding-right: 10px; text-decoration: none; font-weight: bold;"  class="text-secondary"  href="https://www.instagram.com/leandre_moritz/">
+             <i class="fa-brands fa-instagram"> </i>
+           </a>
+           <a style="padding-left: 10px; padding-right: 10px; text-decoration: none; font-weight: bold;" class="text-secondary mx-3 " href="https://www.linkedin.com/in/leandre-moritz-32120823a">
+             <i class="fa-brands fa-linkedin"></i>
+             <a class="text-secondary " style="padding-left: 10px; padding-right: 10px; text-decoration: none; font-weight: bold;" href="https://github.com/leandremoritz" ><i class="fa-brands fa-github"></i></a>
+           </a>
+           </h3>
+       </div>
+   
+</div>
+  
+     
+    
  </section>
   
  <div class="container shadow-lg p-3 my-5 bg-body rounded"   data-aos="flip-up">
+   
  <section id="About"   >
+   
      
       
       
@@ -254,7 +259,7 @@
 </div>
         
        </section>
-       <div class="container  shadow-lg  my-5" data-aos="flip-down">
+       <div class="container  shadow-lg projects-container" data-aos="flip-down">
         
            
        <section id="Projects">
@@ -358,17 +363,17 @@
                     <div class="testimonials">
                       <label class="item" for="t-1">
                         <img src="./jesse.png" alt="picture">
-                        <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                        <p>"Leandre is a perfectionist, she will never settle on designs until they meet her high standards and she is never afraid to share her opinions. Her work attitude combined with her kind personality makes her a complete pleasure to do business with."</p>
                         <h2>Jesse Spence</h2>
                       </label>
                       <label class="item" for="t-2">
                         <img src="./jason.png" alt="picture">
-                        <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                        <p class=".words2.0">"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
                         <h2>Jason Wandrag</h2>
                       </label>
                       <label class="item" for="t-3">
                         <img src="./Ashton (4).JPG" alt="picture">
-                        <p>"Le-Andre is a very talented and intelligent individual, who is willing to go the extra mile and loves to add her own personal touch to things. She isn't afraid to ask questions and likes learning new things, she has great potential"</p>
+                        <p class=".words2.0">"Le-Andre is a very talented and intelligent individual, who is willing to go the extra mile and loves to add her own personal touch to things. She isn't afraid to ask questions and likes learning new things, she has great potential"</p>
                         <h2>Ashton Abrahams</h2>
                       </label>
                       <label class="item" for="t-4">
@@ -431,7 +436,7 @@ method="POST">
      <a style="text-decoration: none !important; color: black;"  href="https://www.instagram.com/leandre_moritz/">
          <i class="fa-brands fa-instagram"> </i>
        </a>
-       <a style="text-decoration: none !important; color: black;"  href="www.linkedin.com/in/leandre-moritz-32120823a">
+       <a style="text-decoration: none !important; color: black;"  href="https://www.linkedin.com/in/leandre-moritz-32120823a">
          <i class="fa-brands fa-linkedin"></i>
          <a style="text-decoration: none !important; color: black;"  href="https://github.com/leandremoritz" ><i class="fa-brands fa-github"></i></a>
        </a>
@@ -458,7 +463,15 @@ method="POST">
     
 
     
-    
+  
+
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load("particular", "particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
 
 
 
