@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
     
-#Home {
+body {
   position: relative;
   z-index: 1000;  
 }
 #particular {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
   z-index: -1;
   
 }
@@ -22,14 +22,13 @@
     text-decoration: none !important;
 }
 html,body{
-     background-color: black;
+     background-color: rgba(0, 0, 0, 0);
     width: 100%;
     overflow-x: hidden;
 }
 
 #Home .container {
-    height: 95vh;
-   
+    height: fit-content;
     background-size: cover;
     color: grey;
    
@@ -84,6 +83,7 @@ html,body{
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
   #About{
+    
       height: fit-content;
     transition: 1s;
     background-image: linear-gradient(90deg, #e9ecef , grey);
@@ -546,7 +546,7 @@ top: 100%;
         width: 350px;
         text-align: center;
         transition: transform 0.4s;
-        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
         user-select: none;
         cursor: pointer;
