@@ -86,10 +86,10 @@ html,body{
     
       height: fit-content;
     transition: 1s;
-    background-image: linear-gradient(90deg, #e9ecef , grey);
+    background-color: #f8f9fa00;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
 
- 
     ul {
         list-style: none; /* Remove list bullets */
         padding-left: 0 !important;
@@ -106,7 +106,7 @@ html,body{
       
        .hide-undesired-half{
         height: 120px;
-        background: white;
+        background-color: transparent !important;
         
         
         font-size: 30px;
@@ -201,9 +201,13 @@ html,body{
           height: 86.95652px;
           background: white;
           text-align: center;
+          padding-top: 20px;
+          font-size: 2.5rem;
           display: table;
           box-shadow: 1px 1px 20px 1px grey !important;
+          transform: rotateZ(90deg)
       }
+      
       .skillstext{
           font-size: 1.6rem;
           font-weight: 500;
@@ -223,6 +227,7 @@ html,body{
 
        #Resume {
            height: 100vh;
+           background-color: transparent;
           
        }
                      .col-1{ height: 80px;
@@ -515,8 +520,8 @@ top: 100%;
 
     #Testimonials {
         margin: 0;
-        background-image: linear-gradient(90deg, #e9ecef , grey) ;
-        color: #fff;
+       
+        color: black;
         font-family: sans-serif;
         display: flex;
         align-items: center;
@@ -541,8 +546,8 @@ top: 100%;
         top: 0;
         position: absolute;
         box-sizing: border-box;
-        background-color:  #a8a8a8;
-        padding: 30px;
+        background-color: white;
+        padding: 20px;
         width: 350px;
         text-align: center;
         transition: transform 0.4s;
@@ -557,7 +562,7 @@ top: 100%;
         border: 3px solid #07fc2c;
     }
     .testimonials .item p {
-        color: white;
+        color: black;
     }
     .testimonials .item h2 {
         font-size: 14px;
